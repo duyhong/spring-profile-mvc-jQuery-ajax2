@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Object in JavaScript!</title>
+ <script type="text/javascript">
+
+///This is called anonymous since it does not have a name
+	 var paa=function(num1,num2){
+			var temp=num1*num2;
+			return temp;
+	 };
+	console.log(paa); //printing the definition of the function which is stored inside paa
+	var t=paa(10,3);
+ 	console.log("t = "+t);
+ 	var r=joke(paa);
+ 	console.log("r = "+r);
+ 	
+ 	//we can pass function definition as a parameter to the other function!
+ 	function joke(callback){
+		console.log(callback);	
+		var t=callback(100,5);
+		return t;
+	 }
+				
+ 
+				
+ </script>
+</head>
+<body>
+ <img src="../images/1.jpg" style="height: 130px;">
+  <h1 style="background-color: yellow;">How to create object in JavaScript</h1>
+
+</body>
+</html>

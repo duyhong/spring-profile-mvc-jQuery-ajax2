@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Object in JavaScript!</title>
+ <script type="text/javascript">
+
+	var data={url:"www.gmail.com",method:"GET"};
+	var callback=function(result){
+			console.log("URL = "+result.url);
+			console.log("Method = "+result.method);
+	} 
+	//calling function and passing two paraneters
+	//1 - JavaScript object
+	//2-  function expression
+	pajax(data,callback);
+	
+	pajax({url:"www.gmail.com",method:"GET"},function(result){
+		console.log("URL = "+result.url);
+		console.log("Method = "+result.method);
+	});
+
+	function pajax(data,callback){
+		callback(data);
+	}			
+				
+ </script>
+</head>
+<body>
+ <img src="../images/1.jpg" style="height: 130px;">
+  <h1 style="background-color: yellow;">How to create object in JavaScript</h1>
+
+</body>
+</html>

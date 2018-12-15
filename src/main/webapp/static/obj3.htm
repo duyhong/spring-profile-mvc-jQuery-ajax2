@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Object in JavaScript!</title>
+ <script type="text/javascript">
+		var email="jaya@gmail.com";		
+		//Creating JavaScript object using Constructor class
+		
+		 //constructor function	
+		 function Customer(name,email,color){
+			this.name=name;
+			this.email=email;
+			this.color=color;
+			/* this.show=function(){
+				console.log("name = "+this.name);
+				console.log("email = "+this.email);
+				console.log("color = "+this.color);
+				console.log("____________________________________________");
+			}; */
+	     }
+
+	    	 //adding method definition inside super class of Customer
+			Customer.prototype.show=function(){
+				console.log("name = "+this.name);
+				console.log("email = "+this.email);
+				console.log("color = "+this.color);
+				console.log("gender = "+this.gender);
+				console.log("____________________________________________");
+			};
+
+			Customer.prototype.gender="Male";
+
+			var customer1=new Customer("Okaka","iwiieuie@gmail.com","white");
+			customer1.gender="Female";
+			
+			var customer2=new Customer("change","change@gmail.com","white");
+			var customer3=new Customer("Mocha","mocha@gmail.com","red");
+			customer1.show();
+			customer2.show();
+			customer3.show();
+				
+ </script>
+</head>
+<body>
+ <img src="../images/1.jpg" style="height: 130px;">
+  <h1 style="background-color: yellow;">How to create object in JavaScript</h1>
+
+</body>
+</html>
