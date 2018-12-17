@@ -26,6 +26,20 @@
 		   <property name = "username" value = "root"/>
 		   
 	</bean> -->
+	
+	<!-- Creating TransactionManager Bean, since JDBC we are creating of type 
+		DataSourceTransactionManager -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<property name="dataSource" ref="pdataSource" />
+	</bean>
+	
+	<!-- Enable Annotation based Declarative Transaction Management
+	below 1 line code is associating your transactionManager bean with  @Transactional
+	 -->
+	<tx:annotation-driven proxy-target-class="true"
+		transaction-manager="transactionManager" />
+	
 	<jee:jndi-lookup id="pdataSource" jndi-name="jdbc/cpool"/>
 	
     <bean id="pjdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
