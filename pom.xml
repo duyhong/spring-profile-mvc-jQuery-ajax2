@@ -100,7 +100,18 @@
 			  <version>2.9.0</version>
 		</dependency>
 		
-		
+		<!-- Using AOP with aspectJ -->
+        <dependency>
+                  <groupId>org.aspectj</groupId>
+                  <artifactId>aspectjrt</artifactId>
+                  <version>1.6.11</version>
+        </dependency>
+
+        <dependency>
+                  <groupId>org.aspectj</groupId>
+                  <artifactId>aspectjweaver</artifactId>
+                  <version>1.6.11</version>
+        </dependency>
   </dependencies>
   
   

@@ -45,5 +45,6 @@
     <bean id="pjdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
     	<property name="dataSource" ref="pdataSource"/>
     </bean>
-			
+	
+	<import resource="spring-aop.xml"/>		
 </beans>			
