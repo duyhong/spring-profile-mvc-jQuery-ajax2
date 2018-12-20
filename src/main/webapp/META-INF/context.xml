@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context  docBase="spring-profile-mvc" path="/spring-profile-mvc">
+<Context  docBase="spring-profile-mvc-jQuery-ajax2-tx-aop-hibernate" path="/spring-profile-mvc-jQuery-ajax2-tx-aop-hibernate">
     Specify a JDBC datasource
     <Resource name="jdbc/cpool" auth="Container"
         type="javax.sql.DataSource" username="root" password="Kh0ng Biet D@u"
