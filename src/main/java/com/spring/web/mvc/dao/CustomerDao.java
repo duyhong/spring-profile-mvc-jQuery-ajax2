@@ -16,7 +16,7 @@ import com.spring.web.mvc.dao.entity.CustomerEntity;
 import com.spring.web.mvc.dao.entity.LoginEntity;
 
 
-@Repository("CustomerDao")
+//@Repository("CustomerDao")
 public class CustomerDao implements ICustomerDao {
 	
 	@Autowired
