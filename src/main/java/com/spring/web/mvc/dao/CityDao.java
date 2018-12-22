@@ -8,7 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 
-@Repository("CityDao")
+//@Repository("CityDao")
 public class CityDao implements ICityDao{
 	
 	@Autowired

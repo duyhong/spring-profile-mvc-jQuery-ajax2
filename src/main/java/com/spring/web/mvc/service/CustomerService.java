@@ -21,7 +21,7 @@ import com.spring.web.mvc.model.Customer;
 public class CustomerService implements  ICustomerService {
 
 	@Autowired
-	@Qualifier("CustomerDao")
+	@Qualifier("CustomerHibernateDao")
 	private ICustomerDao customerDao;
 
 	@Override

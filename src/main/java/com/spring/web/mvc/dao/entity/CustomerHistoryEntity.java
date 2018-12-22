@@ -8,8 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="profile")
-public class CustomerEntity {
+@Table(name="profile_history_tbl")
+public class CustomerHistoryEntity {
 
 	private int cid;
 	private String name;
@@ -89,5 +89,4 @@ public class CustomerEntity {
 		return "CustomerEntity [name=" + name + ", email=" + email + ", gender=" + gender + ", city=" + city
 				+ ", mobile=" + mobile + "]";
 	}
-
 }
