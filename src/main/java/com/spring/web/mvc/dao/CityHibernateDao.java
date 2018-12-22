@@ -13,11 +13,10 @@ import org.springframework.transaction.annotation.Transactional;
 import com.spring.web.mvc.dao.entity.CityEntity;
 
 @Repository("CityHibernateDao")
-@Transactional(value="txManager")
+@Transactional
 public class CityHibernateDao implements ICityDao {
 	
 	@Autowired
-	@Qualifier("sessionFactory")
 	private SessionFactory sessionFactory;
 	
 	private Session getSession(){

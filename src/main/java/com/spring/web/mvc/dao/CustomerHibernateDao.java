@@ -19,11 +19,10 @@ import com.spring.web.mvc.dao.entity.CustomerHistoryEntity;
 import com.spring.web.mvc.dao.entity.LoginEntity;
 
 @Repository("CustomerHibernateDao")
-@Transactional(value="txManager")
+@Transactional
 public class CustomerHibernateDao implements ICustomerDao {
 	
 	@Autowired
-	@Qualifier("sessionFactory")
 	private SessionFactory sessionFactory;
 	
 	private Session getSession(){
