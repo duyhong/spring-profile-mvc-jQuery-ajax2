@@ -13,10 +13,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 /**
- * profile-servlet.xml
+ * 
  * @author Nagendra
  *  This is acting as spring web application context
- *   
+ *  profile-servlet.xml   
  */
 @Configuration
 @EnableWebMvc
