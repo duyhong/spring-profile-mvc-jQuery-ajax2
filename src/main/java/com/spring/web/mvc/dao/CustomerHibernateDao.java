@@ -18,8 +18,8 @@ import com.spring.web.mvc.dao.entity.CustomerEntity;
 import com.spring.web.mvc.dao.entity.CustomerHistoryEntity;
 import com.spring.web.mvc.dao.entity.LoginEntity;
 
-@Repository("CustomerHibernateDao")
-@Transactional
+//@Repository("CustomerHibernateDao")
+//@Transactional
 public class CustomerHibernateDao implements ICustomerDao {
 	
 	@Autowired
@@ -85,6 +85,13 @@ public class CustomerHibernateDao implements ICustomerDao {
 			System.out.println(exception.getMessage());
 		}
 		return customerEntity;
+	}
+	
+	@Override
+	public String deleteCustomerByCid(int cid){
+		CustomerEntity customerEntity=this.getSession().get(CustomerEntity.class, cid);
+		this.getSession().delete(customerEntity);
+		return "deleted";
 	}
 
 	@Override

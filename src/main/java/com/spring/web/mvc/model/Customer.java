@@ -2,12 +2,21 @@ package com.spring.web.mvc.model;
 
 public class Customer {
 
-	String name;
-	String email;
-	String gender;
-	String city;
-	String mobile;
-	String photo;
+	private int cid;
+	private String name;
+	private String email;
+	private String gender;
+	private String city;
+	private String mobile;
+	private String photo;
+
+	public int getCid() {
+		return cid;
+	}
+
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
 	
 	public Customer(){
 		

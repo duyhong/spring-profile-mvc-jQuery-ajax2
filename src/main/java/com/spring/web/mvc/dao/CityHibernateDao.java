@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.spring.web.mvc.dao.entity.CityEntity;
 
-@Repository("CityHibernateDao")
-@Transactional
+//@Repository("CityHibernateDao")
+//@Transactional
 public class CityHibernateDao implements ICityDao {
 	
 	@Autowired

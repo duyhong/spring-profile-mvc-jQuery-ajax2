@@ -22,4 +22,6 @@ public interface ICustomerService {
 
 	void setCustomerDao(CustomerDao customerDao);
 
+	String deleteCustomerByCid(int cid);
+
 }

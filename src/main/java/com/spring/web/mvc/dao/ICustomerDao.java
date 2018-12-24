@@ -19,4 +19,8 @@ public interface ICustomerDao {
 
 	List<CustomerEntity> getCustomers();
 
+	default String deleteCustomerByCid(int cid) {
+		return "";
+	}
+
 }
